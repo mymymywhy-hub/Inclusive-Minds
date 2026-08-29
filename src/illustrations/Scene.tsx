@@ -155,6 +155,13 @@ export default function Illustration({ spec }: { spec: SceneSpec }) {
   const scale = spec.characters.length > 2 ? 1.1 : 1.4
   return (
     <svg viewBox="0 0 400 220" className="w-full h-full" role="img" aria-label={spec.caption ?? 'Story illustration'}>
+      <defs>
+        {/* Gives every character's inked outline a slightly wobbly, hand-drawn edge. */}
+        <filter id="sketchy" x="-15%" y="-15%" width="130%" height="130%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="noise" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.4" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </defs>
       <Backdrop setting={spec.setting} />
       {spec.characters.map((c, i) => (
         <g key={i} transform={`translate(${xs[i] - 30 * scale} ${190 - 100 * scale})`}>
