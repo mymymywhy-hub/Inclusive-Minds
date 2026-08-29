@@ -19,6 +19,7 @@ const story: Story = {
       text: 'My name is Aisha. This is my safe adults story.',
       symbol: { key: 'safeAdult', label: 'Safe adult' },
       scene: { setting: 'frontyard', characters: [aisha({ pose: 'wave' })], caption: 'Aisha waving hello' },
+      illustration: '/illustrations/3-6/safe-adults/01.png',
     },
     {
       text: 'There are grown-ups who keep me safe. I call them my safe adults. Mum, Dad, my teacher, and my auntie are on my list.',
@@ -30,6 +31,7 @@ const story: Story = {
       text: 'My body belongs to me. If someone wants a hug or a tickle and I do not want it, I can say "no thank you," and that is allowed.',
       symbol: { key: 'noThankYou', label: 'My body, my choice' },
       scene: { setting: 'livingroom', characters: [aisha({ pose: 'handUp', expression: 'confident' })], caption: 'Aisha saying no thank you' },
+      illustration: '/illustrations/3-6/safe-adults/03.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Teaching bodily autonomy — that a child\'s "no" to touch is always valid, even with people they love — is protective and is consistent, non-negotiable safeguarding practice.',
@@ -39,6 +41,7 @@ const story: Story = {
       text: 'Before I go anywhere, take a treat, or get in a car, I check first with my safe adult — even if I know the person a little.',
       symbol: { key: 'question', label: 'Check first' },
       scene: { setting: 'frontyard', characters: [aisha({ pose: 'pointForward' }), dad({ flip: true })], caption: 'Aisha checking first with Dad' },
+      illustration: '/illustrations/3-6/safe-adults/04.png',
       clinicianNote: {
         discipline: 'Behaviour Therapist',
         note: 'One consistent "always check first" rule is far easier for a child to apply than trying to judge whether a person seems safe — and it works the same whether someone is a total stranger or a familiar face.',
@@ -84,6 +87,7 @@ const story: Story = {
       text: 'I know my safe adults. My body is mine. I can always ask for help. I am safe, and I am strong.',
       symbol: { key: 'safeAdult', label: 'Safe & strong' },
       scene: { setting: 'livingroom', characters: [aisha({ expression: 'confident' }), dad({}), nan({})], caption: 'Aisha with her family' },
+      illustration: '/illustrations/3-6/safe-adults/09.png',
     },
   ],
 }
