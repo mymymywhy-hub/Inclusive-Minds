@@ -18,16 +18,19 @@ const story: Story = {
       text: 'My name is Zara. This is my friend-making story, for when things get a little more complicated at school.',
       symbol: { key: 'friend', label: 'Friends' },
       scene: { setting: 'classroom', characters: [zara({ pose: 'wave' })], caption: 'Zara waving hello' },
+      illustration: '/illustrations/6-9/making-friends/01.png',
     },
     {
       text: 'Friendships change more as I get older. Sometimes a friend I have had for years finds new friends too, and that can happen without anyone doing anything wrong.',
       symbol: { key: 'worried', label: 'Changing' },
       scene: { setting: 'playground', characters: [zara({ expression: 'worried' }), ben({ pose: 'wave', flip: true })], caption: 'Zara noticing friendships shifting' },
+      illustration: '/illustrations/6-9/making-friends/02.png',
     },
     {
       text: 'If I want to join a group that is already playing or talking, I can watch for a moment first, to find a good time to ask — like a pause in the game, not right in the middle of the exciting part.',
       symbol: { key: 'look', label: 'Watch first' },
       scene: { setting: 'playground', characters: [zara({}), ben({}), jamal({ flip: true })], caption: 'Zara watching for a good moment to join' },
+      illustration: '/illustrations/6-9/making-friends/03.png',
       clinicianNote: {
         discipline: 'Occupational Therapist',
         note: 'Reading the natural pause points in fast-moving group play is a real, teachable skill — scaffolded here as one concrete thing to watch for, rather than an abstract "read the room."',
@@ -37,6 +40,7 @@ const story: Story = {
       text: 'I can say something like, "That looks fun, can I join?" or ask a question about what they are doing. A question about their game is often an easier way in than just announcing myself.',
       symbol: { key: 'question', label: 'Ask in' },
       scene: { setting: 'playground', characters: [zara({ pose: 'pointForward' }), ben({ expression: 'happy', flip: true })], caption: 'Zara asking to join the game' },
+      illustration: '/illustrations/6-9/making-friends/04.png',
       clinicianNote: {
         discipline: 'Speech-Language Pathologist',
         note: 'Question-based entry bids ("what are you playing?") are consistently more successful in peer-play research than declarative entry bids ("I want to play"), so this page gives the higher-success script.',
