@@ -81,7 +81,15 @@ export default function StoryReader() {
       <main className="flex-1 max-w-4xl w-full mx-auto px-5 pb-6 flex flex-col">
         <div className="flex-1 rounded-3xl bg-white shadow-sm border border-black/5 overflow-hidden flex flex-col">
           <div className="aspect-[16/9] bg-brand-bg">
-            <Illustration spec={current.scene} />
+            {current.illustration ? (
+              <img
+                src={current.illustration}
+                alt={current.scene.caption ?? current.text}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <Illustration spec={current.scene} />
+            )}
           </div>
           <div className="p-6 sm:p-8 flex-1 flex flex-col gap-5">
             <div className="flex items-start gap-4">

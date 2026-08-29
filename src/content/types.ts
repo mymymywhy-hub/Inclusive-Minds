@@ -15,7 +15,15 @@ export interface ClinicianNote {
 export interface StoryPage {
   text: string
   symbol: { key: SymbolKey; label: string }
+  /** Procedural placeholder art, used whenever `illustration` isn't set. */
   scene: SceneSpec
+  /**
+   * Path (under /public) to real commissioned artwork for this page, e.g.
+   * "/illustrations/3-6/making-friends/01.png". Once set, it replaces the
+   * procedural `scene` entirely for this page — drop the file in and point
+   * this at it, nothing else needs to change.
+   */
+  illustration?: string
   clinicianNote?: ClinicianNote
 }
 

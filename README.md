@@ -40,6 +40,15 @@ src/
 
 To swap in the real logo and brand colours once they're available, replace `src/components/Logo.tsx` and the CSS custom properties in `src/index.css`.
 
+## Dropping in real illustrations
+
+Every page currently shows procedurally-drawn placeholder art. To replace one with commissioned artwork:
+
+1. Add the image file to `public/illustrations/<age-band>/<topic-slug>/`, e.g. `public/illustrations/3-6/making-friends/01.png` for page 1 of the early-years "Making Friends" story (see `src/content/topics.ts` for the exact `topic-slug`s, and the shot list linked from this project's notes for what each page number needs).
+2. Open that story's file under `src/content/stories/<age-band>/<topic-slug>.ts` and add `illustration: '/illustrations/3-6/making-friends/01.png'` next to that page's `scene` field.
+
+That's it — the reader shows the real image instead of the placeholder for that page automatically, no other code changes needed. Pages without an `illustration` set keep the procedural placeholder, so illustrations can be dropped in one at a time as they're finished.
+
 ## Android app (IM Stories)
 
 The app is wrapped as a native Android app with [Capacitor](https://capacitorjs.com) — `android/` is a real Android Studio project, `capacitor.config.ts` sets the app id (`com.inclusiveminds.imstories`) and name ("IM Stories"), and the icon/splash screens in `android/app/src/main/res` and `store-assets/` are generated from the real logo.
