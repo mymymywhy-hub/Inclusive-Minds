@@ -24,6 +24,7 @@ const story: Story = {
       text: 'There are grown-ups who keep me safe. I call them my safe adults. Mum, Dad, my teacher, and my auntie are on my list.',
       symbol: { key: 'safeAdult', label: 'My list' },
       scene: { setting: 'livingroom', characters: [aisha({}), dad({ pose: 'reachSide', flip: true }), nan({ pose: 'reachSide' })], caption: 'Aisha with her safe adults' },
+      illustration: '/illustrations/3-6/safe-adults/02.png',
     },
     {
       text: 'My body belongs to me. If someone wants a hug or a tickle and I do not want it, I can say "no thank you," and that is allowed.',
@@ -47,6 +48,7 @@ const story: Story = {
       text: 'If I feel unsure about someone, I can trust that feeling in my tummy. I do not have to be polite if something feels wrong.',
       symbol: { key: 'worried', label: 'My feeling matters' },
       scene: { setting: 'frontyard', characters: [aisha({ expression: 'worried' })], caption: 'Aisha noticing an unsure feeling' },
+      illustration: '/illustrations/3-6/safe-adults/05.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Explicitly giving permission to prioritise an internal alarm signal over "being polite" matters most for children who have been taught to comply with adults by default.',
@@ -56,11 +58,13 @@ const story: Story = {
       text: 'If I ever feel lost or unsafe, I look for a helper — someone wearing a uniform, or a grown-up with children — and use my loud voice or my talker to say, "I need help."',
       symbol: { key: 'help', label: 'Find a helper' },
       scene: { setting: 'street', characters: [aisha({ expression: 'worried', pose: 'handUp' }), crossingGuard({ flip: true })], caption: 'Aisha finding a helper' },
+      illustration: '/illustrations/3-6/safe-adults/06.png',
     },
     {
       text: 'Some secrets are fun, like a surprise party — those are okay. But if a secret makes me feel yucky, or someone says "don\'t tell," I always tell my safe adult anyway.',
       symbol: { key: 'safeAdult', label: 'Always tell' },
       scene: { setting: 'livingroom', characters: [aisha({ expression: 'worried' }), nan({ pose: 'reachSide', flip: true, expression: 'calm' })], caption: 'Aisha telling Nan about a secret' },
+      illustration: '/illustrations/3-6/safe-adults/07.png',
       clinicianNote: {
         discipline: 'Speech-Language Pathologist',
         note: 'Naming the exact permission — "you can always tell, even if someone said don\'t" — in plain, literal language is essential safeguarding vocabulary many children need spelled out directly.',
@@ -70,6 +74,7 @@ const story: Story = {
       text: 'I do not need to be scared of everyone I don\'t know yet — most people are kind. I just remember my safe rules: check first, my body is mine, and I can always ask for help.',
       symbol: { key: 'happy', label: 'Confident, not scared' },
       scene: { setting: 'park', characters: [aisha({ expression: 'confident' })], caption: 'Aisha feeling confident, not scared' },
+      illustration: '/illustrations/3-6/safe-adults/08.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Keeping the message rule-based rather than fear-based prevents the anxiety and social withdrawal that blanket "strangers are dangerous" messaging can cause.',
