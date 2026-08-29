@@ -1,16 +1,14 @@
 @import "tailwindcss";
 
 /*
-  Placeholder brand palette for Inclusive Minds.
-  Swap these tokens when the real logo/brand colors arrive —
-  everything in the app reads from these variables, nothing is hard-coded.
+  Inclusive Minds brand palette, taken from the logo (green arch, orange dot).
 */
 :root {
-  --brand-primary: #2f8f8a;    /* warm teal */
-  --brand-primary-dark: #1f6864;
-  --brand-secondary: #f2994a;  /* warm coral/orange */
-  --brand-accent: #8e6fd6;     /* soft violet */
-  --brand-sun: #f6c445;        /* sunshine yellow */
+  --brand-primary: #2e5b45;    /* logo green */
+  --brand-primary-dark: #1e3d2e;
+  --brand-secondary: #c96b45;  /* logo orange */
+  --brand-accent: #8e6fd6;     /* soft violet (supporting cast colour) */
+  --brand-sun: #f6c445;        /* sunshine yellow (supporting cast colour) */
   --brand-bg: #fbf8f2;         /* warm off-white */
   --brand-ink: #2b2b33;        /* soft near-black for text */
 }
