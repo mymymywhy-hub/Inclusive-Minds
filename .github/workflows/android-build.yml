@@ -19,6 +19,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # `secrets` isn't allowed directly in a step's `if:` condition, so it's
+      # threaded through a plain env var first.
+      HAS_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -60,13 +64,13 @@ jobs:
       # still runs and produces an UNSIGNED .aab, which cannot be uploaded to
       # Play Console as-is.
       - name: Decode release keystore
-        if: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' }}
+        if: ${{ env.HAS_KEYSTORE == 'true' }}
         run: echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > android/app/release.keystore
 
       - name: Build release AAB
         working-directory: android
         env:
-          ANDROID_KEYSTORE_PATH: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' && 'release.keystore' || '' }}
+          ANDROID_KEYSTORE_PATH: ${{ env.HAS_KEYSTORE == 'true' && 'release.keystore' || '' }}
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
