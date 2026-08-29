@@ -55,6 +55,7 @@ const story: Story = {
       text: 'Being a good friend also means noticing when someone else looks left out, and inviting them in — the way I would want to be invited.',
       symbol: { key: 'friend', label: 'Include others' },
       scene: { setting: 'playground', characters: [zara({ pose: 'reachSide' }), jamal({ pose: 'reachSide', flip: true })], caption: 'Zara inviting Jamal to join' },
+      illustration: '/illustrations/6-9/making-friends/06.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Practising reciprocity — extending the invitation you\'d want yourself — builds empathy and gives a child an active, prosocial role rather than only a receiving one.',
@@ -64,6 +65,7 @@ const story: Story = {
       text: 'Friendship is not only about being included in a big group. One or two close friends who really get me count just as much.',
       symbol: { key: 'happy', label: 'Quality counts' },
       scene: { setting: 'library', characters: [zara({ expression: 'happy' }), leo({ flip: true, expression: 'happy' })], caption: 'Zara with a close friend' },
+      illustration: '/illustrations/6-9/making-friends/07.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Explicitly valuing depth over breadth matters for children, especially some autistic and introverted children, who thrive with fewer, deeper friendships rather than large-group belonging.',
@@ -73,11 +75,13 @@ const story: Story = {
       text: 'If I keep feeling left out even after trying different strategies, that is something worth telling a trusted grown-up, like my teacher or my parents, so we can problem-solve together.',
       symbol: { key: 'safeAdult', label: 'Tell a grown-up' },
       scene: { setting: 'classroom', characters: [zara({ pose: 'handUp' })], caption: 'Zara telling a trusted grown-up' },
+      illustration: '/illustrations/6-9/making-friends/08.png',
     },
     {
       text: 'Making and keeping friends takes practice at every age. I am allowed to do friendship in the way that suits me, and that makes me a good friend to have.',
       symbol: { key: 'friend', label: 'My way' },
       scene: { setting: 'playground', characters: [zara({ expression: 'confident' }), ben({}), jamal({}), leo({})], caption: 'Zara with her friends' },
+      illustration: '/illustrations/6-9/making-friends/09.png',
     },
   ],
 }
