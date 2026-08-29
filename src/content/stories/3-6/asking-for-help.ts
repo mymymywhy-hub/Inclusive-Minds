@@ -41,6 +41,7 @@ const story: Story = {
       text: 'I can ask for help in different ways: I can say it, I can sign it, or I can press a button on my talker.',
       symbol: { key: 'help', label: 'My way' },
       scene: { setting: 'therapyRoom', characters: [jamal({ device: 'aac', pose: 'pointForward' })], caption: 'Jamal using his talker' },
+      illustration: '/illustrations/3-6/asking-for-help/04.png',
       clinicianNote: {
         discipline: 'Speech-Language Pathologist',
         note: 'All communication modes — spoken words, sign, AAC — count equally as "asking." Multimodal communication is the goal, not speech specifically.',
@@ -50,11 +51,13 @@ const story: Story = {
       text: 'I can ask a safe grown-up, like Dad, my teacher, or Miss Kate, my occupational therapist.',
       symbol: { key: 'safeAdult', label: 'Safe grown-up' },
       scene: { setting: 'therapyRoom', characters: [jamal({}), missKate({ pose: 'reachSide', flip: true })], caption: 'Jamal asking Miss Kate for help' },
+      illustration: '/illustrations/3-6/asking-for-help/05.png',
     },
     {
       text: 'If I feel too overwhelmed to find words, I can hand someone my help card, or point to the help symbol.',
       symbol: { key: 'choice', label: 'Help card' },
       scene: { setting: 'classroom', characters: [jamal({ expression: 'worried', pose: 'handUp' })], caption: 'Jamal reaching for his help card' },
+      illustration: '/illustrations/3-6/asking-for-help/06.png',
       clinicianNote: {
         discipline: 'Behaviour Therapist',
         note: 'A low-effort backup (a card, a symbol, a single point) keeps a way to communicate open even when a child is too dysregulated for their usual words or device navigation.',
@@ -64,11 +67,13 @@ const story: Story = {
       text: 'Sometimes I have to wait a little for help. I can take slow breaths while I wait.',
       symbol: { key: 'calmDown', label: 'Wait calmly' },
       scene: { setting: 'classroom', characters: [jamal({ expression: 'calm' })], caption: 'Jamal breathing slowly while he waits' },
+      illustration: '/illustrations/3-6/asking-for-help/07.png',
     },
     {
       text: 'When someone helps me, I can say "thank you" in my own way.',
       symbol: { key: 'thankYou', label: 'Thank you' },
       scene: { setting: 'therapyRoom', characters: [jamal({ expression: 'happy' }), dad({ pose: 'reachSide', flip: true })], caption: 'Jamal thanking Dad for helping' },
+      illustration: '/illustrations/3-6/asking-for-help/08.png',
     },
     {
       text: 'Everybody needs help sometimes — grown-ups too. Asking for help, in my own way, is one of my strongest skills.',
