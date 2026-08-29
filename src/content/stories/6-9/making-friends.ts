@@ -50,6 +50,7 @@ const story: Story = {
       text: 'Sometimes a group says not right now, or that they are in the middle of something. That can sting, but it usually is not personal — I can try a different group, or ask this same group again later.',
       symbol: { key: 'noThankYou', label: 'Not now' },
       scene: { setting: 'playground', characters: [zara({ expression: 'calm' })], caption: 'Zara handling "not right now"' },
+      illustration: '/illustrations/6-9/making-friends/05.png',
       clinicianNote: {
         discipline: 'Behaviour Therapist',
         note: 'A calm, non-catastrophic explanation for rejection prevents the all-or-nothing thinking ("nobody likes me") that can shut down future attempts to connect.',
