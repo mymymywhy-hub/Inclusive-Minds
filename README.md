@@ -39,3 +39,29 @@ src/
 ```
 
 To swap in the real logo and brand colours once they're available, replace `src/components/Logo.tsx` and the CSS custom properties in `src/index.css`.
+
+## Android app (IM Stories)
+
+The app is wrapped as a native Android app with [Capacitor](https://capacitorjs.com) — `android/` is a real Android Studio project, `capacitor.config.ts` sets the app id (`com.inclusiveminds.imstories`) and name ("IM Stories"), and the icon/splash screens in `android/app/src/main/res` and `store-assets/` are generated from the real logo.
+
+**This sandbox's network policy blocks Android SDK downloads (`dl.google.com`)**, so the APK/AAB can't be compiled here. Instead, **`.github/workflows/android-build.yml`** builds it on GitHub's own runners:
+
+1. Go to the repo's **Actions** tab → **Build Android app** → **Run workflow** (or just push a change under `src/`, `android/`, etc. — it runs automatically).
+2. When it finishes, open the run and download the **`IM-Stories-debug-apk`** artifact — that's an installable, unsigned `.apk` you can side-load on a phone to try it immediately.
+3. It also builds **`IM-Stories-release-aab`**, the `.aab` format Play Console requires — but it's **unsigned** until you add signing secrets (next section), so Play Console will reject it as-is.
+
+### Signing for Play Store submission
+
+Play Console needs a signed `.aab`. To let CI sign it automatically:
+
+1. Generate an upload keystore once, and keep it somewhere safe outside this repo (never commit it):
+   ```bash
+   keytool -genkey -v -keystore release.keystore -alias im-stories -keyalg RSA -keysize 2048 -validity 10000
+   ```
+2. In the GitHub repo, go to **Settings → Secrets and variables → Actions** and add:
+   - `ANDROID_KEYSTORE_BASE64` — output of `base64 -w0 release.keystore` (macOS: `base64 -i release.keystore`)
+   - `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_ALIAS` (`im-stories` above), `ANDROID_KEY_PASSWORD`
+3. Re-run the workflow — `IM-Stories-release-aab` will now be signed and ready to upload to Play Console.
+4. In Play Console: create the app, complete the store listing (the generated `store-assets/play-store-icon-512.png` and `play-store-feature-graphic-1024x500.png` are starting points — swap the feature graphic for real screenshots/artwork before launch), fill in the content rating questionnaire, privacy policy URL, and data-safety form, then upload the `.aab` under **Production → Create release**.
+
+None of this — the store listing, screenshots, privacy policy, or the actual Play Console submission — can be done by an AI on your behalf; they need your Play Console account.

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">IM Stories</string>
+    <string name="title_activity_main">IM Stories</string>
+    <string name="package_name">com.inclusiveminds.imstories</string>
+    <string name="custom_url_scheme">com.inclusiveminds.imstories</string>
+</resources>

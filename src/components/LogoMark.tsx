@@ -2,7 +2,7 @@
  *  in the header wordmark and dropped straight into the favicon. */
 export default function LogoMark({ size = 38 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 200 200" aria-hidden="true">
+    <svg width={size} height={size} viewBox="15 50.5 170 170" aria-hidden="true">
       <path
         d="M56 146 A46 46 0 0 1 144 146"
         fill="none"
