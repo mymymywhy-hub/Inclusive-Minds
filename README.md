@@ -44,11 +44,14 @@ To swap in the real logo and brand colours once they're available, replace `src/
 
 The app is wrapped as a native Android app with [Capacitor](https://capacitorjs.com) — `android/` is a real Android Studio project, `capacitor.config.ts` sets the app id (`com.inclusiveminds.imstories`) and name ("IM Stories"), and the icon/splash screens in `android/app/src/main/res` and `store-assets/` are generated from the real logo.
 
-**This sandbox's network policy blocks Android SDK downloads (`dl.google.com`)**, so the APK/AAB can't be compiled here. Instead, **`.github/workflows/android-build.yml`** builds it on GitHub's own runners:
+**This sandbox's network policy blocks Android SDK downloads (`dl.google.com`)**, so the APK/AAB can't be compiled here. Instead, **`.github/workflows/android-build.yml`** builds it on GitHub's own runners, on every push and on demand (Actions tab → **Build Android app** → **Run workflow**).
 
-1. Go to the repo's **Actions** tab → **Build Android app** → **Run workflow** (or just push a change under `src/`, `android/`, etc. — it runs automatically).
-2. When it finishes, open the run and download the **`IM-Stories-debug-apk`** artifact — that's an installable, unsigned `.apk` you can side-load on a phone to try it immediately.
-3. It also builds **`IM-Stories-release-aab`**, the `.aab` format Play Console requires — but it's **unsigned** until you add signing secrets (next section), so Play Console will reject it as-is.
+**Simplest download — always the newest build, no GitHub navigation needed:**
+👉 **https://github.com/mymymywhy-hub/Inclusive-Minds/releases/tag/latest-build**
+
+That page always has the current `IM-Stories-debug.apk` (installable now — enable "install from unknown sources" on your phone) and `IM-Stories-release.aab` (or `IM-Stories-release-UNSIGNED.aab` until signing secrets are added — see below). Each successful build replaces the files there, so bookmark that one link.
+
+(The same files are also attached to each individual run under Actions → that run → Artifacts, if you want a specific historical build rather than the latest.)
 
 ### Signing for Play Store submission
 

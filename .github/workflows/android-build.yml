@@ -19,6 +19,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
       # `secrets` isn't allowed directly in a step's `if:` condition, so it's
       # threaded through a plain env var first.
@@ -82,3 +84,28 @@ jobs:
           name: IM-Stories-release-aab
           path: android/app/build/outputs/bundle/release/app-release.aab
           if-no-files-found: error
+
+      # Gives a stable, directly-downloadable link (no GitHub Actions login/
+      # navigation needed) that always points at the latest successful build:
+      # https://github.com/<owner>/<repo>/releases/tag/latest-build
+      - name: Rename build outputs for the release
+        run: |
+          cp android/app/build/outputs/apk/debug/app-debug.apk IM-Stories-debug.apk
+          cp android/app/build/outputs/bundle/release/app-release.aab "IM-Stories-release${{ env.HAS_KEYSTORE == 'true' && '' || '-UNSIGNED' }}.aab"
+
+      - name: Publish "latest-build" release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest-build
+          name: "IM Stories — latest build"
+          body: |
+            Automatically rebuilt from commit ${{ github.sha }} on ${{ github.ref_name }}.
+
+            - **IM-Stories-debug.apk** — installable now (enable "install from unknown sources" on your phone). Not signed for Play Store.
+            - **IM-Stories-release*.aab** — the format Play Console requires. Signed and upload-ready only once the `ANDROID_KEYSTORE_*` secrets are set (see README); otherwise it's marked UNSIGNED and Play Console will reject it.
+
+            This release is overwritten by every successful build — the link above always has the newest version.
+          files: |
+            IM-Stories-debug.apk
+            IM-Stories-release*.aab
+          make_latest: true
