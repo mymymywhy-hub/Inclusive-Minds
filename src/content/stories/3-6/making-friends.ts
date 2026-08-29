@@ -19,6 +19,7 @@ const story: Story = {
       text: 'My name is Leo. This is my friend-making story.',
       symbol: { key: 'friend', label: 'Friend' },
       scene: { setting: 'park', characters: [leo({ pose: 'wave' })], caption: 'Leo waving hello' },
+      illustration: '/illustrations/3-6/making-friends/01.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Starting with "this is MY story" puts the child in the hero role from page one — a strengths-based framing shown to support self-efficacy in social-skills programs.',
@@ -37,6 +38,7 @@ const story: Story = {
       text: 'When I want to play with someone, I can feel excited. Sometimes I feel a little nervous too. Both feelings are okay.',
       symbol: { key: 'worried', label: 'Nervous' },
       scene: { setting: 'park', characters: [leo({ expression: 'worried' })], caption: 'Leo feeling a mix of excited and nervous' },
+      illustration: '/illustrations/3-6/making-friends/03.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Naming and normalising mixed feelings before a social task reduces anxiety and helps regulate the nervous system enough to try the next step.',
@@ -46,6 +48,7 @@ const story: Story = {
       text: 'I can walk over, take a breath, and say, "Hi, I’m Leo. Can I play too?"',
       symbol: { key: 'question', label: 'Ask' },
       scene: { setting: 'park', characters: [leo({ pose: 'pointForward' }), zara({ expression: 'happy' })], caption: 'Leo asking to join' },
+      illustration: '/illustrations/3-6/making-friends/04.png',
       clinicianNote: {
         discipline: 'Speech-Language Pathologist',
         note: 'A short, predictable script lowers the language load of starting a conversation — a technique used often in pragmatic-language and social-communication therapy.',
@@ -55,6 +58,7 @@ const story: Story = {
       text: 'Some children talk with words. Some use a tablet or signs to talk. I can watch and wait for their answer, however they say it.',
       symbol: { key: 'listen', label: 'Wait & listen' },
       scene: { setting: 'park', characters: [jamal({ pose: 'neutral' }), leo({ pose: 'neutral' })], caption: 'Leo waiting for Jamal to answer on his talker' },
+      illustration: '/illustrations/3-6/making-friends/05.png',
       clinicianNote: {
         discipline: 'Speech-Language Pathologist',
         note: 'Modelling patience with AAC users teaches every reader to be a good communication partner, not only a good talker.',
@@ -64,6 +68,7 @@ const story: Story = {
       text: 'Sometimes someone says, "Yes, let’s play!" That feels great.',
       symbol: { key: 'happy', label: 'Happy' },
       scene: { setting: 'playground', characters: [leo({ pose: 'reachSide', expression: 'happy' }), priya({ pose: 'reachSide', expression: 'happy', flip: true })], caption: 'Leo and Priya playing together' },
+      illustration: '/illustrations/3-6/making-friends/06.png',
     },
     {
       text: 'Sometimes someone says, "Not right now." That is okay too. It is not about me — maybe they want to play alone today.',

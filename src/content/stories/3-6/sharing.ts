@@ -18,6 +18,7 @@ const story: Story = {
       text: 'My name is Priya. This is my sharing story.',
       symbol: { key: 'share', label: 'Share' },
       scene: { setting: 'frontyard', characters: [priya({ pose: 'wave' })], caption: 'Priya waving hello' },
+      illustration: '/illustrations/3-6/sharing/01.png',
     },
     {
       text: 'I like to play with my toys and games. Sometimes a friend wants to play with the same toy as me.',
@@ -37,6 +38,7 @@ const story: Story = {
       text: 'I can say, "You can have a turn after me," or "Let’s trade — you can have this one."',
       symbol: { key: 'turnTaking', label: 'Turns' },
       scene: { setting: 'livingroom', characters: [priya({ pose: 'reachSide' }), leo({ pose: 'reachSide', flip: true, expression: 'happy' })], caption: 'Priya offering a turn' },
+      illustration: '/illustrations/3-6/sharing/04.png',
       clinicianNote: {
         discipline: 'Speech-Language Pathologist',
         note: 'Two short, ready-made scripts give a child words to reach for in the moment, instead of needing to invent language while already frustrated.',
@@ -60,6 +62,7 @@ const story: Story = {
       text: 'When my friend shares with me, I can say "thank you."',
       symbol: { key: 'thankYou', label: 'Thank you' },
       scene: { setting: 'livingroom', characters: [priya({ expression: 'happy' }), leo({ flip: true, expression: 'happy' })], caption: 'Priya saying thank you' },
+      illustration: '/illustrations/3-6/sharing/07.png',
     },
     {
       text: 'If there is one special toy I really do not want to share, I can say so before we start playing. That is okay — I get to choose what I share.',
