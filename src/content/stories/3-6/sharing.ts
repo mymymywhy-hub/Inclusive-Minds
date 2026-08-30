@@ -24,11 +24,13 @@ const story: Story = {
       text: 'I like to play with my toys and games. Sometimes a friend wants to play with the same toy as me.',
       symbol: { key: 'question', label: 'Same toy' },
       scene: { setting: 'livingroom', characters: [priya({ pose: 'pointForward' }), leo({ pose: 'pointForward', flip: true })], caption: 'Priya and Leo both wanting the same toy' },
+      illustration: '/illustrations/3-6/sharing/02.png',
     },
     {
       text: 'When it is hard to share, I can feel frustrated. That feeling is normal. I can take a slow breath.',
       symbol: { key: 'worried', label: 'Frustrated' },
       scene: { setting: 'livingroom', characters: [priya({ expression: 'worried' })], caption: 'Priya feeling frustrated' },
+      illustration: '/illustrations/3-6/sharing/03.png',
       clinicianNote: {
         discipline: 'Behaviour Therapist',
         note: 'Naming the feeling and pairing it with one simple regulation step (a breath) before any "sharing rule" is taught — regulation always comes before skill-teaching.',
@@ -48,6 +50,7 @@ const story: Story = {
       text: 'We can use a turn-taking timer or a turn card, so we both know when the turn changes.',
       symbol: { key: 'wait', label: 'Wait' },
       scene: { setting: 'livingroom', characters: [priya({}), zara({ flip: true })], caption: 'Priya and Zara using a timer' },
+      illustration: '/illustrations/3-6/sharing/05.png',
       clinicianNote: {
         discipline: 'Occupational Therapist',
         note: 'A visual timer turns an abstract wait into something a child can see counting down, which lowers anxiety around "how much longer."',
@@ -57,6 +60,7 @@ const story: Story = {
       text: 'While I wait for my turn, I can do something else fun, like build or draw, until it is my turn again.',
       symbol: { key: 'play', label: 'Something else' },
       scene: { setting: 'livingroom', characters: [priya({ expression: 'calm' })], caption: 'Priya drawing while she waits' },
+      illustration: '/illustrations/3-6/sharing/06.png',
     },
     {
       text: 'When my friend shares with me, I can say "thank you."',
@@ -68,6 +72,7 @@ const story: Story = {
       text: 'If there is one special toy I really do not want to share, I can say so before we start playing. That is okay — I get to choose what I share.',
       symbol: { key: 'choice', label: 'My choice' },
       scene: { setting: 'livingroom', characters: [priya({ pose: 'handUp', expression: 'confident' })], caption: 'Priya choosing what to share' },
+      illustration: '/illustrations/3-6/sharing/08.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Sharing works best when it is a genuine choice, not a demand. Letting a child protect one special item respects bodily and object autonomy and reduces meltdown triggers.',
