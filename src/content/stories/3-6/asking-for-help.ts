@@ -82,6 +82,7 @@ const story: Story = {
       text: 'Everybody needs help sometimes — grown-ups too. Asking for help, in my own way, is one of my strongest skills.',
       symbol: { key: 'happy', label: 'Proud' },
       scene: { setting: 'therapyRoom', characters: [jamal({ expression: 'confident', device: 'aac' })], caption: 'Jamal feeling proud' },
+      illustration: '/illustrations/3-6/asking-for-help/09.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Closing by normalising that everyone — including adults — needs help sometimes removes the last bit of stigma and ends the story on competence, not deficit.',
