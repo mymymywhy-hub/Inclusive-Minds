@@ -18,16 +18,19 @@ const story: Story = {
       text: 'My name is Ben. This is my fair sharing story.',
       symbol: { key: 'share', label: 'Fair sharing' },
       scene: { setting: 'playground', characters: [ben({ pose: 'wave' })], caption: 'Ben waving hello' },
+      illustration: '/illustrations/6-9/sharing/01.png',
     },
     {
       text: 'As I get older, sharing is not just about toys — it is about turns on the trampoline, controllers, seats on the bus, and who goes first in a game.',
       symbol: { key: 'turnTaking', label: 'Bigger turns' },
       scene: { setting: 'playground', characters: [ben({}), zara({ flip: true })], caption: 'Ben and Zara waiting for a turn' },
+      illustration: '/illustrations/6-9/sharing/02.png',
     },
     {
       text: 'Sometimes it is hard to know what is fair when a game does not have clear turns. We can agree on a way to decide together, like a timer, a roster, or taking turns choosing the game.',
       symbol: { key: 'choice', label: 'Decide together' },
       scene: { setting: 'playground', characters: [ben({ pose: 'pointForward' }), zara({ flip: true })], caption: 'Ben and Zara agreeing on a system' },
+      illustration: '/illustrations/6-9/sharing/03.png',
       clinicianNote: {
         discipline: 'Occupational Therapist',
         note: 'Co-creating a fairness system (a timer, a roster) before conflict starts is far more effective than negotiating fairness mid-argument, when both children are already frustrated.',
@@ -37,6 +40,7 @@ const story: Story = {
       text: 'If I feel it is unfair, I can say so calmly: "I do not think that is fair, because..." and suggest an idea, instead of just saying no or walking away.',
       symbol: { key: 'question', label: 'Speak up calmly' },
       scene: { setting: 'playground', characters: [ben({ pose: 'pointForward' })], caption: 'Ben speaking up calmly' },
+      illustration: '/illustrations/6-9/sharing/04.png',
       clinicianNote: {
         discipline: 'Speech-Language Pathologist',
         note: 'This is an assertive script — clear and calm, not passive (saying nothing) or aggressive (shouting or grabbing) — a middle path many children need modelled explicitly.',
@@ -46,6 +50,7 @@ const story: Story = {
       text: 'Sometimes the other person will not agree straight away. We might need to compromise — that means both of us give a little, so it works for both of us.',
       symbol: { key: 'share', label: 'Compromise' },
       scene: { setting: 'playground', characters: [ben({ pose: 'reachSide' }), zara({ pose: 'reachSide', flip: true, expression: 'happy' })], caption: 'Ben and Zara compromising' },
+      illustration: '/illustrations/6-9/sharing/05.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Compromise is a genuinely advanced social skill — this page names it plainly as "both of us give a little," giving children concrete language for an abstract idea.',
@@ -69,6 +74,7 @@ const story: Story = {
       text: 'Fair sharing means everyone gets a turn to feel good, including me. I am getting better at working these things out with my friends.',
       symbol: { key: 'happy', label: 'Fair for everyone' },
       scene: { setting: 'playground', characters: [ben({ expression: 'confident' }), zara({})], caption: 'Ben and Zara playing fairly together' },
+      illustration: '/illustrations/6-9/sharing/08.png',
     },
   ],
 }
