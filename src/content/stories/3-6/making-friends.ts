@@ -29,6 +29,7 @@ const story: Story = {
       text: 'At the park, I see other children playing. Some children I know. Some children are new to me.',
       symbol: { key: 'look', label: 'Look' },
       scene: { setting: 'park', characters: [priya({ pose: 'neutral' }), zara({ pose: 'wave' }), ben({ pose: 'neutral' })], caption: 'Children playing at the park' },
+      illustration: '/illustrations/3-6/making-friends/02.png',
       clinicianNote: {
         discipline: 'Occupational Therapist',
         note: 'Noticing peers and pausing before joining is a real social-observation skill, often built step-by-step in OT-led play groups before any approach is expected.',
@@ -74,6 +75,7 @@ const story: Story = {
       text: 'Sometimes someone says, "Not right now." That is okay too. It is not about me — maybe they want to play alone today.',
       symbol: { key: 'noThankYou', label: 'Not now' },
       scene: { setting: 'park', characters: [leo({ expression: 'calm' }), ben({ pose: 'neutral', expression: 'calm' })], caption: 'Leo hearing "not right now"' },
+      illustration: '/illustrations/3-6/making-friends/07.png',
       clinicianNote: {
         discipline: 'Behaviour Therapist',
         note: 'Offering a calm, non-blaming reason for "no" helps prevent a rejection spiral, a reframe used often in social-skills coaching to build resilience.',
@@ -83,6 +85,7 @@ const story: Story = {
       text: 'If that happens, I can ask someone else, or play nearby until I feel ready to try again.',
       symbol: { key: 'choice', label: 'Choice' },
       scene: { setting: 'park', characters: [leo({ pose: 'neutral' }), aisha({ pose: 'wave' })], caption: 'Leo choosing what to try next' },
+      illustration: '/illustrations/3-6/making-friends/08.png',
       clinicianNote: {
         discipline: 'Occupational Therapist',
         note: 'Giving two concrete backup options (instead of "just keep trying") turns a big ask into a manageable choice, reducing decision overload.',
@@ -92,6 +95,7 @@ const story: Story = {
       text: 'Making a new friend can take practice. Every time I try, I am learning. I am a good friend, and I can make friends in my own way.',
       symbol: { key: 'friend', label: 'Friend' },
       scene: { setting: 'playground', characters: [leo({ expression: 'confident' }), priya({}), jamal({}), aisha({})], caption: 'Leo and friends together' },
+      illustration: '/illustrations/3-6/making-friends/09.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Ending on effort-based praise ("every time I try, I am learning") builds a growth mindset rather than tying self-worth to the outcome.',
