@@ -60,6 +60,7 @@ const story: Story = {
       text: 'If someone keeps taking more than their fair share, even after I have spoken up, it is okay to ask an adult to help sort it out. That is not tattling — that is problem-solving.',
       symbol: { key: 'help', label: 'Ask an adult' },
       scene: { setting: 'playground', characters: [ben({ pose: 'handUp' }), dad({ flip: true })], caption: 'Ben asking Dad for help sorting it out' },
+      illustration: '/illustrations/6-9/sharing/06.png',
       clinicianNote: {
         discipline: 'Behaviour Therapist',
         note: 'Naming this "problem-solving, not tattling" directly counters the peer pressure that often stops children this age from getting help with a genuinely unfair situation.',
@@ -69,6 +70,7 @@ const story: Story = {
       text: 'I also get to have things that are only mine sometimes — like my own device, my special things, or my personal space — and I can say so clearly.',
       symbol: { key: 'choice', label: 'What is mine' },
       scene: { setting: 'bedroom', characters: [ben({ expression: 'confident' })], caption: 'Ben with his own things' },
+      illustration: '/illustrations/6-9/sharing/07.png',
     },
     {
       text: 'Fair sharing means everyone gets a turn to feel good, including me. I am getting better at working these things out with my friends.',
