@@ -18,11 +18,13 @@ const story: Story = {
       text: 'My name is Jamal. This is my asking-for-help story.',
       symbol: { key: 'help', label: 'Help' },
       scene: { setting: 'therapyRoom', characters: [jamal({ pose: 'wave' })], caption: 'Jamal waving hello' },
+      illustration: '/illustrations/3-6/asking-for-help/01.png',
     },
     {
       text: 'Sometimes I get stuck, or hurt, or the room feels too loud. My body tells me when I need help.',
       symbol: { key: 'loudNoise', label: 'Too loud' },
       scene: { setting: 'classroom', characters: [jamal({ expression: 'worried' })], caption: 'Jamal noticing the room feels loud' },
+      illustration: '/illustrations/3-6/asking-for-help/02.png',
       clinicianNote: {
         discipline: 'Occupational Therapist',
         note: 'Naming the body cue first (stuck, hurt, loud) builds interoceptive awareness — noticing a need before it becomes a crisis is the real first skill here.',
@@ -32,6 +34,7 @@ const story: Story = {
       text: 'Asking for help is a strong thing to do, not a hard thing.',
       symbol: { key: 'help', label: 'Strong' },
       scene: { setting: 'therapyRoom', characters: [jamal({ expression: 'confident' })], caption: 'Jamal feeling confident' },
+      illustration: '/illustrations/3-6/asking-for-help/03.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Reframing help-seeking as strength (not weakness or failure) removes the shame that often stops children asking at all.',

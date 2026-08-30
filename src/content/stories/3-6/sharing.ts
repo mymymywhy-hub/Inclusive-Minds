@@ -82,6 +82,7 @@ const story: Story = {
       text: 'Sharing helps everyone have fun together. I am learning to share, and that makes me a great friend.',
       symbol: { key: 'friend', label: 'Friend' },
       scene: { setting: 'playground', characters: [priya({ expression: 'confident' }), leo({}), zara({})], caption: 'Priya playing happily with friends' },
+      illustration: '/illustrations/3-6/sharing/09.png',
     },
   ],
 }
