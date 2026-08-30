@@ -18,11 +18,16 @@ export default function StoryReader() {
   const [page, setPage] = useState(0)
   const [showNote, setShowNote] = useState(false)
   const [showHowTo, setShowHowTo] = useState(false)
+  const [imageFailed, setImageFailed] = useState(false)
 
   useEffect(() => {
     setPage(0)
     setShowNote(false)
   }, [ageBand, slug])
+
+  useEffect(() => {
+    setImageFailed(false)
+  }, [page, ageBand, slug])
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -81,11 +86,13 @@ export default function StoryReader() {
       <main className="flex-1 max-w-4xl w-full mx-auto px-5 pb-6 flex flex-col">
         <div className="flex-1 rounded-3xl bg-white shadow-sm border border-black/5 overflow-hidden flex flex-col">
           <div className="aspect-[16/9] bg-brand-bg">
-            {current.illustration ? (
+            {current.illustration && !imageFailed ? (
               <img
+                key={current.illustration}
                 src={current.illustration}
                 alt={current.scene.caption ?? current.text}
                 className="w-full h-full object-cover"
+                onError={() => setImageFailed(true)}
               />
             ) : (
               <Illustration spec={current.scene} />
