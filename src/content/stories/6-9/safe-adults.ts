@@ -18,16 +18,19 @@ const story: Story = {
       text: "My name is Leo. I'm older now, and my safe adults story has grown with me.",
       symbol: { key: 'safeAdult', label: 'Growing up' },
       scene: { setting: 'livingroom', characters: [leo({ pose: 'wave' })], caption: 'Leo waving hello' },
+      illustration: '/illustrations/6-9/safe-adults/01.png',
     },
     {
       text: 'My trusted adult list still matters, and now it includes people at school and in my activities too, like my coach or my SSO, not just family.',
       symbol: { key: 'safeAdult', label: 'My growing list' },
       scene: { setting: 'classroom', characters: [leo({})], caption: 'Leo thinking about his trusted adults' },
+      illustration: '/illustrations/6-9/safe-adults/02.png',
     },
     {
       text: 'The check-first rule still applies — in person and online. I check with a trusted adult before meeting up with someone I have only spoken to through a game or an app, even if they seem nice.',
       symbol: { key: 'question', label: 'Check first, online too' },
       scene: { setting: 'bedroom', characters: [leo({ expression: 'calm' })], caption: 'Leo checking first before an online meet-up' },
+      illustration: '/illustrations/6-9/safe-adults/03.png',
       clinicianNote: {
         discipline: 'Behaviour Therapist',
         note: 'The same single "check first" rule from early childhood generalises cleanly into online contexts — it is easier for a child to hold onto one consistent rule than to try to judge who is safe based on how someone presents online.',
@@ -37,11 +40,13 @@ const story: Story = {
       text: 'I never share my address, my school name, or photos of myself with someone I only know online, even if they ask nicely or say it is a secret.',
       symbol: { key: 'noThankYou', label: 'Keep it private' },
       scene: { setting: 'bedroom', characters: [leo({ expression: 'worried' })], caption: 'Leo keeping his information private' },
+      illustration: '/illustrations/6-9/safe-adults/04.png',
     },
     {
       text: 'My body is still mine. That includes at sleepovers, in changing rooms, and around people I know well. I can say no to anything that does not feel right, and I do not have to explain why.',
       symbol: { key: 'noThankYou', label: 'My body, still mine' },
       scene: { setting: 'bedroom', characters: [leo({ expression: 'confident' })], caption: 'Leo asserting his body autonomy' },
+      illustration: '/illustrations/6-9/safe-adults/05.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Restating bodily autonomy as a standing rule (not just for early childhood) matters through the primary years, when children start spending more unsupervised time with peers at sleepovers, sports, and camps.',
@@ -51,6 +56,7 @@ const story: Story = {
       text: 'If a friend tells me a secret that worries me — like someone hurting them, or making them feel unsafe — I tell a trusted adult, even if my friend asked me not to. Keeping a friend safe matters more than keeping that secret.',
       symbol: { key: 'help', label: 'Keep my friend safe' },
       scene: { setting: 'classroom', characters: [leo({ expression: 'worried' }), dad({ flip: true, expression: 'calm' })], caption: 'Leo telling Dad about a friend\'s secret' },
+      illustration: '/illustrations/6-9/safe-adults/06.png',
       clinicianNote: {
         discipline: 'Speech-Language Pathologist',
         note: 'This page gives explicit, literal permission to break a "don\'t tell" instruction when a friend\'s safety is at risk — spelling this out directly matters, since the social pressure to keep any promised secret can otherwise override a child\'s better judgement.',
@@ -60,6 +66,7 @@ const story: Story = {
       text: 'If I am ever unsure whether something is safe, I trust that unsure feeling and I check with a safe adult. I will not always be right about who is safe just by how someone looks or acts — that is why the rules matter more than guessing.',
       symbol: { key: 'unsure', label: 'Trust the rules' },
       scene: { setting: 'livingroom', characters: [leo({ expression: 'worried' }), nan({ flip: true, expression: 'calm' })], caption: 'Leo checking his unsure feeling with Nan' },
+      illustration: '/illustrations/6-9/safe-adults/07.png',
       clinicianNote: {
         discipline: 'Psychologist',
         note: 'Reinforcing rule-based safety over appearance-based judgement is protective specifically because most safeguarding harm comes from people a child already knows and likes, not unfamiliar-looking strangers.',
@@ -69,6 +76,7 @@ const story: Story = {
       text: 'I know my safe adults, online and in person. My body is mine. I speak up for myself and for my friends. That makes me safe, and it makes me a good friend too.',
       symbol: { key: 'safeAdult', label: 'Safe & strong' },
       scene: { setting: 'livingroom', characters: [leo({ expression: 'confident' }), dad({}), nan({})], caption: 'Leo with his family, feeling safe and strong' },
+      illustration: '/illustrations/6-9/safe-adults/08.png',
     },
   ],
 }
